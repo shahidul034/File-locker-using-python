@@ -1,3 +1,8 @@
+# MD Shahidul Salim (Shakib)
+# ROll: 1507034
+# CSE,KUET
+
+
 from tkinter import *
 def RSA(filename):
 
@@ -79,23 +84,12 @@ def RSA(filename):
         en.append(pow(x, e, n))
     print("\nencrypt msg: ", en)
     ss = ""
-    f3 = open(r'C:\Users\Inception\Desktop\pic\encrypt_file', 'w')
+    f3 = open(r'C:\Users\Inception\PycharmProjects\File locker\pic\encrypt_file', 'w')
     for x in en:
         ss += (str(x) + " ")
 
     f3.write(ss)
-    en2 = ss.split(" ")
-    en.clear()
-    for x in en2:
-        if len(x) > 0:
-            en.append(int(x))
-    for x in en:
-        de.append(pow(x, d, n))
-    bytearray(de[:4])
-    f2 = open(r'C:\Users\Inception\Desktop\pic\tt.txt', 'wb')
-    f2.write(bytearray(de))
-    f2.close()
-    print("decrypt msg: ", de)
+
 def file_take():
     from tkinter import Tk
     from tkinter.filedialog import askopenfilename
