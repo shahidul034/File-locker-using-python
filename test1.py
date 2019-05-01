@@ -101,7 +101,7 @@ class App(QMainWindow):
         self.setWindowTitle(self.title)
 
         self.setGeometry(self.left, self.top, self.width, self.height)
-        self.label = QLabel("Enter your p", self)
+        self.label = QLabel("Enter  1st prime number: " , self)
         self.label.move(20, 10)
         self.label.resize(280, 40)
 
@@ -111,7 +111,7 @@ class App(QMainWindow):
         self.textbox.move(20, 40)
         self.textbox.resize(280, 40)
 
-        self.label = QLabel("Enter your q", self)
+        self.label = QLabel("Enter  2nd prime number: ", self)
         self.label.move(20, 70)
         self.label.resize(280, 40)
 
@@ -120,14 +120,14 @@ class App(QMainWindow):
         self.textbox2.resize(280, 40)
 
         # Create a button in the window
-        self.button = QPushButton('Key gen', self)
+        self.button = QPushButton('Key generate', self)
         self.button.move(20, 150)
         # connect button to function on_click
         self.button.clicked.connect(self.on_click)
 
 
 
-        self.button2 = QPushButton('open your file', self)
+        self.button2 = QPushButton('Open your file', self)
         self.button2.move(20, 190)
         self.button2.clicked.connect(self.openFileNameDialog)
 

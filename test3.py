@@ -59,13 +59,6 @@ class App(QMainWindow):
         self.textbox3.resize(280, 40)
 
 
-        # Create a button in the window
-        self.button = QPushButton('Enter your key', self)
-        self.button.move(20, 220)
-        # connect button to function on_click
-        self.button.clicked.connect(self.on_click)
-
-
 
         self.button2 = QPushButton('open your file', self)
         self.button2.move(20, 260)
@@ -78,6 +71,10 @@ class App(QMainWindow):
 
 
     def decrypt(self):
+        textboxValue = self.textbox.text()
+        self.de_key = int(textboxValue)
+        textboxValue3 = self.textbox2.text()
+        self.n = int(textboxValue3)
         textboxValue2 = self.textbox3.text()
         self.file_type = textboxValue2
         en = []
@@ -91,18 +88,11 @@ class App(QMainWindow):
         for x in en:
             de.append(pow(x, self.de_key, self.n))
         bytearray(de[:4])
-        f2 = open(r'C:\Users\Inception\Desktop\decrypt\de.'+self.file_type, 'wb')
+        f2 = open(r'C:\Users\Inception\Desktop\decrypt\decrypt_file.'+self.file_type, 'wb')
         f2.write(bytearray(de))
         f2.close()
         print("decrypt msg: ", de)
 
-
-    @pyqtSlot()
-    def on_click(self):
-        textboxValue = self.textbox.text()
-        self.de_key=int(textboxValue)
-        textboxValue2 = self.textbox2.text()
-        self.n = int(textboxValue2)
 
 
     def openFileNameDialog(self):
