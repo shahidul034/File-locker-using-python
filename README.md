@@ -34,22 +34,23 @@ They have a login and register button.
 
 This button used for registering any user. When any user registers, it’s corresponding private and private key are generated using the RSA algorithm. This private and public key helps the user to encrypt and decrypt their files.
 
-![](https://github.com/shahidul034/File-locker-using-python/blob/master/image/image003.png)
+![](https://github.com/shahidul034/File-locker-using-python/blob/master/image/image003.jpg)
+
 If the user already exists, it shows the user already exists.
 
-![](https://github.com/shahidul034/File-locker-using-python/blob/master/image/image004.png)
+![](https://github.com/shahidul034/File-locker-using-python/blob/master/image/image004.jpg)
 
 **Login**
 
 This button helps the user to log in his account. After login, we are going to encrypt and decrypt page.
 
-![](https://github.com/shahidul034/File-locker-using-python/blob/master/image/image005.png)
+![](https://github.com/shahidul034/File-locker-using-python/blob/master/image/image005.jpg)
 
 **Encrypt and decrypt**
 
 This page has three buttons. The first button helps the user to encrypt his files using the private key. The second button helps the user to decrypt the files. The third button helps the user to show his files and save this file in the desktop.
 
-![](https://github.com/shahidul034/File-locker-using-python/blob/master/image/image006.png)
+![](https://github.com/shahidul034/File-locker-using-python/blob/master/image/image006.jpg)
 
 ### Conclusion
 
