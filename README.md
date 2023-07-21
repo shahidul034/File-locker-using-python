@@ -1,5 +1,5 @@
 # Project Title
-File locker using python
+Secure File Locker: Implementing RSA Encryption Algorithm with Python and Flask for Data Protection
 
 ## Getting Started
 
